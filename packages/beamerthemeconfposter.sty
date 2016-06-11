@@ -124,20 +124,6 @@
 \definecolor{White}		  	    {RGB}{255, 255, 255}    % White  No PANTONE match
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 % set the basic colors
 \setbeamercolor{palette primary}   {fg=black,bg=white}
 \setbeamercolor{palette secondary} {fg=black,bg=white}
@@ -193,20 +179,25 @@
 % build the poster title
 %==============================================================================
 \setbeamertemplate{headline}{
- \leavevmode
+ \vskip -1.5cm
+ \begin{beamercolorbox}[center]{headline title}
+  \leavevmode
   \begin{columns}
    \begin{column}{\linewidth}
-    \vskip1cm
+    \vskip 2.5cm
     \centering
-    \usebeamercolor{title in headline}{\color{jblue}\Huge{\textbf{\inserttitle}}\\[0.5ex]}
+    \usebeamercolor{title in headline}{\color{fg}\Huge{\textbf{\inserttitle}}\\[0.5ex]}
     \usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}\\[1ex]}
     \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}
-    \vskip1cm
+    \vskip 1cm
    \end{column}
    \vspace{1cm}
   \end{columns}
  \vspace{0.5in}
- \begin{beamercolorbox}[wd=\paperwidth,colsep=0.15cm]{cboxb}\end{beamercolorbox}
+ 
+ \end{beamercolorbox}
+ 
+ \begin{beamercolorbox}[wd=\paperwidth,colsep=0.15cm]{headline line}\end{beamercolorbox}
  \vspace{0.1in}
 }
 

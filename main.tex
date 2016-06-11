@@ -37,12 +37,17 @@
 % Look in a sub folder: http://tex.stackexchange.com/a/284157
 \usepackage{./packages/beamerthemeconfposter}
 
-
+% Many more colors are available for use in beamerthemeconfposter.sty
+\setbeamercolor{headline title}{fg=white,bg=RoyalBlue!95} % Colors of the block titles
+\setbeamercolor{headline line}{fg=black,bg=Goldenrod} % Colors of the block titles
 \setbeamercolor{block title}{fg=RoyalBlue,bg=white} % Colors of the block titles
 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
 \setbeamercolor{block alerted title}{fg=black,bg=Goldenrod!70} % Colors of the highlighted block titles
 \setbeamercolor{block alerted body}{fg=black,bg=Goldenrod!10} % Colors of the body of highlighted blocks
-% Many more colors are available for use in beamerthemeconfposter.sty
+
+% set colors for itemize/enumerate
+\setbeamercolor{item}{fg=Goldenrod}
+\setbeamercolor{item projected}{fg=black,bg=Goldenrod}
 
 %-----------------------------------------------------------
 % Define the column widths and overall poster size
@@ -66,7 +71,7 @@
 %-----------------------------------------------------------
 
 \usepackage{graphicx}  % Required for including images
-
+\usepackage{tikz} % Allow placing of logo in top right
 \usepackage{booktabs} % Top and bottom rules for tables
 
 %----------------------------------------------------------------------------------------
@@ -77,8 +82,7 @@
 
 \author{John Smith, James Smith and Jane Smith} % Author(s)
 
-\institute{Department and University Name} % Institution(s)
-
+\institute{University of Delaware} % Institution(s)
 
 %----------------------------------------------------------------------------------------
 
@@ -93,6 +97,13 @@
 % The whole poster is enclosed in one beamer frame
 \begin{frame}[t]
 
+%----------------------------------------------------------------------------------------
+
+
+% Add logo in top right
+\tikz[remember picture,overlay]
+  \node[anchor=north east,inner sep=1in] at (current page.north east)
+    {\includegraphics[height=3in]{figures/logo.png}};
 
 %----------------------------------------------------------------------------------------
 
@@ -166,5 +177,6 @@
 
 
 \end{frame} % End of the enclosing frame
+
 
 \end{document}
