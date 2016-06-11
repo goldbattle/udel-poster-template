@@ -26,7 +26,7 @@
 
 % Use the beamerposter package for laying out the poster
 % Edit this scale to change the font size, and all rendered graphics
-\usepackage[scale=1.8]{beamerposter}
+\usepackage[scale=1.55]{beamerposter}
 \usepackage{import}
 
 % Allow for larger equations
@@ -35,7 +35,7 @@
 
 % Use the confposter theme supplied with this template
 % Look in a sub folder: http://tex.stackexchange.com/a/284157
-\usepackage{./packages/beamerthemeconfposter}
+\usepackage{packages/beamerthemeconfposter}
 
 % Many more colors are available for use in beamerthemeconfposter.sty
 \setbeamercolor{headline title}{fg=white,bg=RoyalBlue!95} % Colors of the block titles
@@ -61,8 +61,8 @@
 \newlength{\onecolwid}
 \newlength{\twocolwid}
 \newlength{\threecolwid}
-\setlength{\paperwidth}{60in} % A0 width: 46.8in
-\setlength{\paperheight}{40in} % A0 height: 33.1in
+\setlength{\paperwidth}{47in} % A0 width: 46.8in
+\setlength{\paperheight}{33in} % A0 height: 33.1in
 \setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
 \setlength{\onecolwid}{0.22\paperwidth} % Width of one column
 \setlength{\twocolwid}{0.464\paperwidth} % Width of two columns
@@ -102,14 +102,14 @@
 
 % Add logo in top right
 \tikz[remember picture,overlay]
-  \node[anchor=north east,inner sep=0in,shift={(-0.7in,-1.1in)}] at (current page.north east)
-    {\includegraphics[height=3in]{figures/udel_logo.png}};
+  \node[anchor=north east,inner sep=0in,shift={(-2cm,-3.2cm)}] at (current page.north east)
+    {\includegraphics[height=2in]{figures/udel_logo.png}};
 
 %----------------------------------------------------------------------------------------
 
 
 % Add some padding above the first row
-\vspace{20mm}
+\vspace{0mm}
 
 % Begin the first row of blocks
 \begin{columns}[t,totalwidth=\paperwidth]
