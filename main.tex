@@ -37,17 +37,21 @@
 % Look in a sub folder: http://tex.stackexchange.com/a/284157
 \usepackage{packages/beamerthemeconfposter}
 
+% Define udel colors (from udel main website)
+\definecolor{udelblue}{RGB}{0, 72, 165}
+\definecolor{udelgold}{RGB}{255, 211, 0}
+
 % Many more colors are available for use in beamerthemeconfposter.sty
-\setbeamercolor{headline title}{fg=white,bg=RoyalBlue!95} % Colors of the block titles
-\setbeamercolor{headline line}{fg=black,bg=Goldenrod} % Colors of the block titles
-\setbeamercolor{block title}{fg=RoyalBlue,bg=white} % Colors of the block titles
+\setbeamercolor{headline title}{fg=white,bg=udelblue} % Colors of the block titles
+\setbeamercolor{headline line}{fg=black,bg=udelgold} % Colors of the block titles
+\setbeamercolor{block title}{fg=udelblue,bg=white} % Colors of the block titles
 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
-\setbeamercolor{block alerted title}{fg=black,bg=Goldenrod!70} % Colors of the highlighted block titles
-\setbeamercolor{block alerted body}{fg=black,bg=Goldenrod!10} % Colors of the body of highlighted blocks
+\setbeamercolor{block alerted title}{fg=black,bg=udelgold!85} % Colors of the highlighted block titles
+\setbeamercolor{block alerted body}{fg=black,bg=udelgold!10} % Colors of the body of highlighted blocks
 
 % set colors for itemize/enumerate
-\setbeamercolor{item}{fg=Goldenrod}
-\setbeamercolor{item projected}{fg=black,bg=Goldenrod}
+\setbeamercolor{item}{fg=udelgold}
+\setbeamercolor{item projected}{fg=black,bg=udelgold}
 
 %-----------------------------------------------------------
 % Define the column widths and overall poster size
